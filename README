@@ -1,0 +1,79 @@
+# Django Case Insensitive Field
+
+
+```bash
+# install from pypi
+pip install django_case_insensitive_field
+```
+
+Django Case Insensitive Field is used to make Django Model Field case insensitive - by default Django can't do this. 
+
+Let's assume you have a `username`  field on your `UserModel` which ofcourse would require `username` to be unique accross the `table` but to Django `abc` is different from `ABC` because it is case sensitive (meaning: users can use the same username but with different case).
+
+Look at the example below:
+
+```python
+from django.db import models
+
+class UserModel(models.Model):
+
+    username = models.CharField(max_length=16, unique=True)
+
+
+
+user1 = UserModel(username='user1') # will go through
+
+
+user2 = UserModel(username='User1') # will still go through
+
+```
+
+
+
+## Using Django Case Insensitive Model
+
+To make Django Model Field insensitive, you can use the code below:
+
+
+```python
+
+# fields.py
+
+from django_case_insensitive_field import CaseInsensitiveField
+
+
+class LowerCharField(CaseInsensitiveMixin, CharField):
+    """[summary]
+    Makes django CharField case insensitive \n
+    Extends both the `CaseInsensitiveMixin` and  CharField \n
+    Then you can import 
+    """
+
+    def __init__(self, *args, **kwargs):
+
+        super(CaseInsensitiveMixin, self).__init__(*args, **kwargs) 
+
+
+```
+
+```python
+
+# models.py
+
+from .fields import LowerCharField
+
+
+class UserModel(models.Model):
+
+    username = LowerCharField(max_length=16, unique=True)
+
+user1 = UserModel(username='user1') # will go through
+
+
+user2 = UserModel(username='User1') # will not go through
+```
+
+
+## Dependencies
+
+Holla! No dependecy. Lightweight!
