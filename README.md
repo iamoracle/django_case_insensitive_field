@@ -1,7 +1,7 @@
-# Django Case Insensitive Field
+# Django Case Insensitive Model Field
 
 
-Django Case Insensitive Field is used to make Django Model Field case insensitive - by default Django can't do this. 
+With Django Case Insensitive Field you can make Django Model Field case insensitive - by default Django can't do this which will make it impossible to add a unique field that will be case insensitive regardeless of case.
 
 Let's assume you have a `username`  field on your `UserModel` which ofcourse would require `username` to be unique accross the `table` but to Django `abc` is different from `ABC` because it is case sensitive (meaning: users can use the same username but with different case).
 
@@ -81,6 +81,10 @@ user2.save() # will not go through
 
 
 ```
+
+# Note:
+
+All values are converted to lowercase before insertion and extraction from database.
 
 
 ## Dependencies
