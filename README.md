@@ -86,6 +86,10 @@ user2.save() # will not go through
 
 All values are converted to lowercase before insertion and extraction from database.
 
+## Compatibility
+
+1. Compatible with every database - POSTGRESQL, SQLITE, MYSQL etc.
+2. Compatible with Django 2+, 3+
 
 ## Dependencies
 
