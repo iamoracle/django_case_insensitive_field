@@ -16,7 +16,7 @@ setup(
   long_description=long_description,      # Long description read from the the readme file
   long_description_content_type="text/markdown",
   url = 'https://github.com/iamoracle/django_case_insensitive_field',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/iamoracle/django_case_insensitive_field/archive/refs/tags/v1.0.2.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/iamoracle/django_case_insensitive_field/archive/refs/tags/v1.0.3.tar.gz',    # I explain this later on
   keywords = ['Django', 'Case Insensitive', 'Field', 'How to make Django Field', 'make django case insensitive'],   # Keywords that define your package best
   install_requires=[],
   classifiers=[
