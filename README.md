@@ -82,7 +82,7 @@ user2.save() # will not go through
 
 ```
 
-# Note:
+## Note:
 
 All values are converted to lowercase before insertion and extraction from database.
 
