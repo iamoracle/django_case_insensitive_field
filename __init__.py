@@ -1,1 +1,1 @@
-from .field import CaseInsensitiveFieldMixin
+# removed import
