@@ -1,5 +1,8 @@
 # Django Case Insensitive Model Field
 
+```bash
+pip install django_case_insensitive_field
+```
 
 With Django Case Insensitive Field you can make Django Model Field case insensitive - by default Django can't do this which will make it impossible to add a unique field that will be case insensitive regardeless of case.
 
