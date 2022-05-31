@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
   name = 'django_case_insensitive_field',         # How you named your package folder (MyLib)
-  version = '1.0.5',      # Start with a small number and increase it with every change you make
+  version = '1.0.6',      # Start with a small number and increase it with every change you make
   license='MIT',
   py_modules=["django_case_insensitive_field"],             # Name of the python package       # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = "Django Case Insensitive Field is used to make Django Model Field case insensitive - by default Django can't do this.",
