@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
   name = 'django_case_insensitive_field',         # How you named your package folder (MyLib)
-  version = '1.0.6',      # Start with a small number and increase it with every change you make
+  version = '1.0.7',      # Start with a small number and increase it with every change you make
   license='MIT',
   py_modules=["django_case_insensitive_field"],             # Name of the python package       # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = "Django Case Insensitive Field is used to make Django Model Field case insensitive - by default Django can't do this.",
@@ -16,7 +16,7 @@ setup(
   long_description=long_description,      # Long description read from the the readme file
   long_description_content_type="text/markdown",
   url = 'https://github.com/iamoracle/django_case_insensitive_field',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/iamoracle/django_case_insensitive_field/archive/refs/tags/v1.0.4.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/iamoracle/django_case_insensitive_field/archive/refs/tags/v1.0.7.tar.gz',    # I explain this later on
   keywords = ['Django', 'Case Insensitive', 'Field', 'How to make Django Field', 'make django case insensitive'],   # Keywords that define your package best
   install_requires=[],
   classifiers=[
