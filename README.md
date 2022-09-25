@@ -57,7 +57,7 @@ class CaseInsensitiveCharField(CaseInsensitiveFieldMixin, CharField):
 
     def __init__(self, *args, **kwargs):
 
-        super(CaseInsensitiveMixin, self).__init__(*args, **kwargs) 
+        super(CaseInsensitiveFieldMixin, self).__init__(*args, **kwargs) 
 
 
 ```
